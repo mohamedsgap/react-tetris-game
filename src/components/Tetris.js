@@ -2,6 +2,7 @@ import React from 'react'
 import Display from './Display'
 import Stage from './Stage'
 import StartBtn from './StartBtn'
+import { buildStage } from '../utils/gameHelpers'
 
 
 const Tetris = () => {
@@ -9,7 +10,7 @@ const Tetris = () => {
     return (
     <div>
         <h1>Tetris game is in developing process!!!</h1>
-        <Stage />
+        <Stage stage={buildStage()}/>
         <aside>
             <div>
                 <Display text="Score"/>
