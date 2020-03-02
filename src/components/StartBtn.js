@@ -1,13 +1,10 @@
-import React from 'react'
 
 
+import React from 'react';
+import { StartBtnStyling } from './StartBtnStyling';
 
-const StartBtn = ({callback}) => {
-    return (
-    <div>
-        Start Button
-    </div>
-    )
-}
+const StartBtn = ({ callback }) => (
+  <StartBtnStyling onClick={callback}>Start Game</StartBtnStyling>
+)
 
-export  default StartBtn;
+export default StartBtn;
