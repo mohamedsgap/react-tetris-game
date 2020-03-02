@@ -6,3 +6,8 @@ body {
   font-family: 'Pixel';
   src: url('font/Pixel-LCD-7.woff') format('woff');
 }
+.gameTitle {
+  color: azure;
+  margin-bottom: -30px;
+  margin-top: 0px;
+}
