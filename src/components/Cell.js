@@ -1,13 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { CellStyling } from './CellStyling';
+import { TETROMINOS } from '../utils/tetrominos';
 
+const Cell = ({ type }) => (
+  <CellStyling type={type} color={TETROMINOS[type].color} />
+)
 
-
-const Cell = ({type}) => {
-    return (
-    <div>
-        <h3>Cell of game </h3>
-    </div>
-    )
-}
-
-export  default Cell;
+export default Cell;
