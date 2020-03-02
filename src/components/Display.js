@@ -1,13 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { DisplayStyling } from './DisplayStyling';
 
+const Display = ({ gameOver, text }) => (
+  <DisplayStyling gameOver={gameOver}>{text}</DisplayStyling>
+)
 
-
-const Display = ({gameOver, text}) => {
-    return (
-    <div>
-        <h3>Display of the game</h3>
-    </div>
-    )
-}
-
-export  default Display;
+export default Display;
