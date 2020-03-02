@@ -3,24 +3,24 @@ import Display from './Display'
 import Stage from './Stage'
 import StartBtn from './StartBtn'
 import { buildStage } from '../utils/gameHelpers'
-
-
+import { TetrisWrapperStyling, TetrisStyling } from './TetrisStyling';
 const Tetris = () => {
-
-    return (
-    <div>
-        <h1>Tetris game is in developing process!!!</h1>
-        <Stage stage={buildStage()}/>
+  return (
+    <TetrisWrapperStyling>
+     <h1 className="gameTitle"><span role="img" aria-label="tetris-emoji">🧩</span>React Tetris Game<span role="img" aria-label="tetris-emoji">🧩</span></h1>
+      <TetrisStyling>
+        <Stage stage={buildStage()} />
         <aside>
-            <div>
-                <Display text="Score"/>
-                <Display text="Rows"/>
-                <Display text="Levels"/>
-            </div>
-            <StartBtn />
+          <div>
+            <Display text="Score" />
+            <Display text="Rows" />
+            <Display text="Level" />
+          </div>
+          <StartBtn />
         </aside>
-    </div>
-    )
-}
+      </TetrisStyling>
+    </TetrisWrapperStyling>
+  );
+};
 
-export  default Tetris;
+export default Tetris;
